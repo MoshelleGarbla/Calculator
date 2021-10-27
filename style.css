@@ -1,0 +1,84 @@
+*{
+    padding: 0; /*Added the default setting from a css styling*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; /*Added a generic font family */
+}
+
+section{
+    background-color: tan; 
+    min-height: 100vh;
+    width: 100%; /* Wanted the section to take 100% of the website, the calculator will be placed in the middle*/
+    display: flex; /* Content will be placed in the middle */
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: navajowhite;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: wheat;
+    height: 100px;
+    width:100%;
+    text-align: right;
+    padding:20px;
+    font-size: 30px;
+    position: relative;
+}
+
+display-1{
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.temp-results{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: .4;
+}
+
+.all_button{
+color: 	#DEB887; 
+display: grid; /*Gives the content the display of a grid */
+grid-template-columns: 1fr 1fr 1fr 1fr; /* The grid is divided by four equal columns */
+}
+
+
+
+.button{
+    border: .5px solid burlywood;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+
+
+
+
+
+.button:hover{
+    background-color: cornsilk; /* Changes the color of the button when the pointer hover over */
+}
+
+
+
+
+.btn-0{
+    grid-column: 1/3; /*Makes the grid grow in size from 1 to 3. Starting from the left*/
+}
