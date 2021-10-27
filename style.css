@@ -8,43 +8,43 @@ html{
     font-family: 'Courier New', Courier, monospace; /*Added a generic font family */
 }
 
-section{
+section{ /*for the background content*/
     background-color: tan; 
-    min-height: 100vh;
+    min-height: 100vh; 
     width: 100%; /* Wanted the section to take 100% of the website, the calculator will be placed in the middle*/
     display: flex; /* Content will be placed in the middle */
-    align-items: center;
-    justify-content: center;
+    align-items: center; /*Content in the center*/
+    justify-content: center; /*content in the center*/
 }
 .container{
-    width: 90%;
-    max-width: 400px;
+    width: 90%; 
+    max-width: 400px; /*at large screen size my text alignment wont get to long*/
     background-color: navajowhite;
     border-radius: 8px;
     overflow: hidden;
 }
 .display{
     background-color: wheat;
-    height: 100px;
-    width:100%;
-    text-align: right;
-    padding:20px;
+    height: 100px; 
+    width: 100%;
+    text-align: right; /*text is align to the right*/
+    padding: 20px; /*the distance from the border*/
     font-size: 30px;
-    position: relative;
+    position: relative; 
 }
 
 display-1{
     opacity: .4;
-    font-size: 20px;
+    font-size: 10px;
     height: 20px;
     overflow: hidden;
 }
 .temp-results{
-    position: absolute;
-    bottom: 0;
-    left: 10;
+    position: absolute; /*can position where I want in the page in conjunction to the parent element (display)*/
+    bottom: 0; /* placed the value at the bottom left of the display*/
+    left: 10; 
     font-size: 20px;
-    opacity: .4;
+    opacity: .4; /*how much the number fades(transparency) into the background*/
 }
 
 .all_button{
