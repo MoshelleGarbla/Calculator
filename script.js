@@ -45,4 +45,8 @@ operationE1.forEach( operation =>{
 function clearVar(name = ''){
     dis1Num += dis2Num+ ' ' + name + ' ';
     display1E1.innerText = dis1Num;
+    display2E1.innerText = '';
+    dis2Num = '';
+    tempResultE1.innerText = result;
 }
+//need to connect second display to operation//
