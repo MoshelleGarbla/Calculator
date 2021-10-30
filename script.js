@@ -38,6 +38,7 @@ operationE1.forEach( operation => {
         result = parseFloat(dis2Num);
       }
       clearVar(operationName);
+      lastOperation = operationName
       console.log(result);
     })
 });
@@ -47,6 +48,24 @@ function clearVar(name = '') {
     display1E1.innerText = dis1Num;
     display2E1.innerText = '';
     dis2Num = '';
-    tempResultsE1.innerText = result;
+    tempResultsE1.innerText = result; //connected the second display screen with the results inputted//
 }
-//need to connect second display to operation//
+
+function mathOperation(){
+  if(lastOperation === 'X'){
+    result = parseFloat(result) * parseFloat(dis2Num)
+  }else if (lastOperation === '+'){
+    result = parseFloat(result) + parseFloat(dis2Num)
+  }else if (lastOperation === '-'){
+    result = parseFloat(result) - parseFloat(dis2Num)
+  }else if (lastOperation === '/'){
+    result = parseFloat(result) / parseFloat(dis2Num)
+  }else if (lastOperation === '%'){
+    result = parseFloat(result) % parseFloat(dis2Num)
+
+  }
+}
+
+
+
+
