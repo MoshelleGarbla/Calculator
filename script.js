@@ -1,6 +1,6 @@
 const display1E1 = document.querySelector('.display-1');
 const display2E1 = document.querySelector('.display-2');
-const tempResultE1 = document.querySelector('.temp-result');
+const tempResultsE1 = document.querySelector('.temp-results');
 const numbersE1 = document.querySelectorAll('.number');
 const operationE1 = document.querySelectorAll('.operation');
 const equalE1 = document.querySelector('.equal');
@@ -25,28 +25,28 @@ if(e.target.innerText === '.' && !haveDot){
       display2E1.innerText = dis2Num
 
     })
-})
+});
 
-operationE1.forEach( operation =>{
+operationE1.forEach( operation => {
     operation.addEventListener('click', (e)=>{
-      if (!dis2Num) return;
+      if (!dis2Num) result;
       haveDot= false;
       const operationName = e.target.innerText;
       if(dis1Num && dis2Num && lastOperation){
-        mathOperation();
+       mathOperation();
       }else{
-          result = parseFloat(dis2Num)
+        result = parseFloat(dis2Num);
       }
       clearVar(operationName);
       console.log(result);
     })
 });
 
-function clearVar(name = ''){
+function clearVar(name = '') {
     dis1Num += dis2Num+ ' ' + name + ' ';
     display1E1.innerText = dis1Num;
     display2E1.innerText = '';
     dis2Num = '';
-    tempResultE1.innerText = result;
+    tempResultsE1.innerText = result;
 }
 //need to connect second display to operation//
