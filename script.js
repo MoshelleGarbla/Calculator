@@ -66,6 +66,16 @@ function mathOperation(){
   }
 }
 
+equalE1.addEventListener('click', (e)=> {
+  if( !dis1Num || !dis2Num ) return;
+  haveDot = false;
+  mathOperation();
+  clearVar();
+  display2E1.innerText = result;
+  tempResultsE1.innerText = '';
+  dis2Num = result;
+  dis1Num = '';
+})
 
 
 
